@@ -27,8 +27,8 @@ function commands(command) {
                 autoclicker()
               }
             } else {
-              if (command.includes('Project_Overflow-GUI ')) {
-                var t4 = command.split('Project_Overflow-GUI ')
+              if (command.includes('Project_OverflowGUI ')) {
+                var t4 = command.split('Project_OverflowGUI ')
                 if (t4[1]=="open") {
                   OVERFLOWGUIdia.open = true
                 } else {
