@@ -2,7 +2,7 @@ function commands(command) {
   if (command.includes('Return ')) {
     var c10 = command.split(' ReturnCode: ')
     var c11 = command.split(' CommandRunAfter:  ')
-    if (c10==0) {
+    if (c10.includes(' 0 ')) {
       var t11 = commands("Custom_Info_Dia ButtonGroup: 1 Head: Are you sure?")
       if (InfoButtonsPressed=="yes") {
         commands(c11[1])
