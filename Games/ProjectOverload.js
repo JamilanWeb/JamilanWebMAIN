@@ -72,7 +72,7 @@ function commands(command) {
                   } else {
                     if (command.includes('Custom_Info_Dia ')) {
                       var c8 = command.split('Custom_Info_Dia ButtonGroup: ')
-                      if (c8[1].includes(' 1 ') {
+                      if (c8[1].includes(' 1 ')) {
                         InfoYesButtonGroup.removeAttribute('hidden')
                         var c9 = command.split(' Head: ')
                         Head_Text2.textContent = c9[1]
