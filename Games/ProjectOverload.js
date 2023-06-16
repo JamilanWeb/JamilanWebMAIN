@@ -4,7 +4,7 @@ function commands(command) {
     var c11 = command.split(' CommandRunAfter:  ')
     if (c10.includes(' 0 ')) {
       var t11 = commands("Custom_Info_Dia ButtonGroup: 1 Head: Are you sure?")
-      if (InfoButtonsPressed=="yes") {
+      if (InfoButtonsPressed=='yes') {
         commands(c11[1])
       }
       } else {
