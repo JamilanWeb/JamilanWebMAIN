@@ -82,7 +82,7 @@ function commands(command) {
                       Head_Text2.textContent = t9[1]
                       Modifyable_info_dia.open = true
                     } else {
-                        if (command.includes('Return ') {
+                        if (command.includes('Return ')) {
                           var c10 = command.split(' ReturnCode: ')
                           var c11 = command.split(' CommandRunAfter:  ')
                           if (c10==0) {
