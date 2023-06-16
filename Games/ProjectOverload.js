@@ -1,4 +1,8 @@
 function commands(command) {
+  if (command.includes('Page_Load_Command ')) {
+    var t8 = comamnd.split("Page_Load_Command Command: ")
+    localStorage.setItem("Page_Load_Command", t8[1])
+  } else {
   if (command.includes('SetCookie ')) {
     var t = command.split("SetCookie ")
     cookies=t[1]
@@ -70,10 +74,6 @@ function commands(command) {
                       OVERFLOWdia.open = false
                     }
                   } else {
-                    if (command.includes('Page_Load_Command ')) {
-                      var t8 = comamnd.split("Page_Load_Command Command: ")
-                      localStorage.setItem("Page_Load_Command", t8[1])
-                    } else {
                       errorsfx.play()
                       OVERFLOWdiaError.open = true
                     }
