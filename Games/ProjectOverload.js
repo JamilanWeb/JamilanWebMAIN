@@ -1,4 +1,16 @@
 function commands(command) {
+  if (command.includes('Return ')) {
+    var c10 = command.split(' ReturnCode: ')
+    var c11 = command.split(' CommandRunAfter:  ')
+    if (c10==0) {
+      var t11 = commands("Custom_Info_Dia ButtonGroup: 1 Head: Are you sure?")
+      if (InfoButtonsPressed=="yes") {
+        commands(c11[1])
+      }
+      } else {
+          return 1
+      }
+      } else {
   if (command.includes('SetCookie ')) {
     var t = command.split("SetCookie ")
     cookies=t[1]
@@ -82,21 +94,8 @@ function commands(command) {
                       Head_Text2.textContent = t9[1]
                       Modifyable_info_dia.open = true
                     } else {
-                        if (command.includes('Return ')) {
-                          var c10 = command.split(' ReturnCode: ')
-                          var c11 = command.split(' CommandRunAfter:  ')
-                          if (c10==0) {
-                            var t11 = commands("Custom_Info_Dia ButtonGroup: 1 Head: Are you sure?")
-                            if (InfoButtonsPressed=="yes") {
-                              commands(c11[1])
-                            }
-                          } else {
-                            return 1
-                          }
-                        } else {
                       errorsfx.play()
                       OVERFLOWdiaError.open = true
-                    }
                   }
                 }
               }
@@ -104,5 +103,6 @@ function commands(command) {
           }
         }
     }
+}
 }
 
