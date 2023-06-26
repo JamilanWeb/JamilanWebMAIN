@@ -2,7 +2,7 @@ var AccessedPages;
 
 var Access_Check = function() {
   var errorlist = ["", "PLEASE ENTER A COMMAND", "BRO STUPID"]
-  var output = Math.floor(Math.random() * 2)
+  var output = Math.floor(Math.random() * 3)
   console.error(errorlist[output])
 }
 
