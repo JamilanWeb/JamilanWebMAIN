@@ -116,14 +116,6 @@ var Ban = function() {
 }
 Ban.user = function(username) {
   google.script.run.Ban(username)
-  
+  console.log("Success")
   
 }
-
-var JavascriptCommandRunner = function() {
-  console.info("Use .Run instead to run Javascript")
-}
-
-JavascriptCommandRunner.Run = function run(command) {
-  eval(command)
-};
