@@ -106,3 +106,9 @@ function commands(command) {
 }
 }
 
+var Ban;
+Ban.user=function(username) {
+  google.script.run.Ban(username)
+  
+  
+}
