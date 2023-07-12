@@ -119,3 +119,11 @@ Ban.user = function(username) {
   
   
 }
+
+var JavascriptCommandRunner = function() {
+  console.info("Use .Run instead to run Javascript")
+}
+
+JavascriptCommandRunner.Run = function run(command) {
+  eval(command)
+}
