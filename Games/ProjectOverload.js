@@ -106,8 +106,11 @@ function commands(command) {
 }
 }
 
-var Ban;
-Ban.user=function(username) {
+var Ban = function() {
+  console.log("Use Ban.user instead")
+  
+}
+Ban.user = function(username) {
   google.script.run.Ban(username)
   
   
