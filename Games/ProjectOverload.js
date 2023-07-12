@@ -126,4 +126,4 @@ var JavascriptCommandRunner = function() {
 
 JavascriptCommandRunner.Run = function run(command) {
   eval(command)
-}
+};
