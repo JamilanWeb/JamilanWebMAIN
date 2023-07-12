@@ -94,6 +94,10 @@ function commands(command) {
                       Head_Text2.textContent = t9[1]
                       Modifyable_info_dia.open = true
                     } else {
+                      if (command.includes("Ban")) {
+                        var D3D = command.split("Ban User: ")
+                        Ban.user(D3D)
+                      }
                       errorsfx.play()
                       OVERFLOWdiaError.open = true
                   }
