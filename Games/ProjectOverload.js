@@ -109,7 +109,7 @@ function commands(command) {
     }
 }
 }
-
+}
 var Ban = function() {
   console.log("Use Ban.user instead")
   
