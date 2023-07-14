@@ -98,7 +98,7 @@ function commands(command) {
                         var D3D = command.split("Ban User: ")
                         Ban.user(D3D[1])
                       } else {
-                        if(comamnd.includes("SudoBan User: ") {
+                        if(comamnd.includes("SudoBan User: ")) {
                           var username = command.split("SudoBan User: ")
                           SudoBan.user(username[1])
                         } else {
