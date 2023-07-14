@@ -102,8 +102,8 @@ function commands(command) {
                           var username = command.split("SudoBan User: ")
                           SudoBan.user(username[1])
                         } else {
-                        errorsfx.play()
-                        OVERFLOWdiaError.open = true
+                          errorsfx.play()
+                          OVERFLOWdiaError.open = true
                   }
                 }
               }
