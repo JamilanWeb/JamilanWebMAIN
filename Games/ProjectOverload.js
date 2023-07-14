@@ -98,8 +98,12 @@ function commands(command) {
                         var D3D = command.split("Ban User: ")
                         Ban.user(D3D[1])
                       } else {
-                      errorsfx.play()
-                      OVERFLOWdiaError.open = true
+                        if(comamnd.includes("SudoBan User: ") {
+                          var username = command.split("SudoBan User: ")
+                          SudoBan.user(username)
+                        } else {
+                        errorsfx.play()
+                        OVERFLOWdiaError.open = true
                   }
                 }
               }
@@ -107,6 +111,7 @@ function commands(command) {
           }
         }
     }
+}
 }
 }
 }
