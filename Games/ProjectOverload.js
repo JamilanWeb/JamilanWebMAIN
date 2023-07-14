@@ -119,3 +119,13 @@ Ban.user = function(username) {
   console.log("Success")
   
 }
+var SudoBan = function() {
+  console.log("Use SudoBan.user instead")
+  
+}
+
+SudoBan.user = function(username) {
+  google.script.run.SUBan(username)
+  console.log("Success")
+  
+}
