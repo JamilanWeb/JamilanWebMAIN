@@ -96,7 +96,7 @@ function commands(command) {
                     } else {
                       if (command.includes("Ban")) {
                         var D3D = command.split("Ban User: ")
-                        Ban.user(D3D)
+                        Ban.user(D3D[1])
                       } else {
                       errorsfx.play()
                       OVERFLOWdiaError.open = true
