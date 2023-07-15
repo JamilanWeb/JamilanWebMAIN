@@ -130,7 +130,7 @@ var SudoBan = function() {
 }
 
 SudoBan.user = function(username) {
-  google.script.run.SUBan(username)
+  google.script.run.SudoBan(username)
   console.log("Success")
   
 }
