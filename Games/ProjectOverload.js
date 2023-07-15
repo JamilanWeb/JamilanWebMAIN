@@ -94,8 +94,8 @@ function commands(command) {
                       Head_Text2.textContent = t9[1]
                       Modifyable_info_dia.open = true
                     } else {
-                      if (command.includes("Ban")) {
-                        var D3D = command.split("Ban User: ")
+                      if (command.includes("UBan")) {
+                        var D3D = command.split("UBan User: ")
                         Ban.user(D3D[1])
                       } else {
                         if(comamnd.includes("SudoBan User: ")) {
