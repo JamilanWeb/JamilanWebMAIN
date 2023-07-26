@@ -1,5 +1,5 @@
 var exit = function(ID) {
-  document.getElementById("AdBox"+ID).setAttribute("hidden", "true")
+  document.top.getElementById("AdBox"+ID).setAttribute("hidden", "true")
 }
 
 var info = function(AdID) {
