@@ -1,9 +1,36 @@
 <html>
   <head>
-    
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>APP_SCRIPT-PLAYER</title>
   </head>
   <body>
-    
+    <div id="videopplayer">
+      <video src="" id="vp"></video>
+      <button id="play_pauser" style="background: none;">▶</button>
+    </div>
+    <script>
+      var pause_play = document.getElementById('play_pauser')
+      function videoaction(e) {
+        if (e=="play") {
+          pause_play.onclick={
+            videoaction("pause")
+          }
+          pause_play.value = "⏸"
+          videoplayer.play()
+        }
+        if (e=="pause") {
+          pause_play.onclick={
+            videoaction("play")
+          }
+          pause_play.value = "▶"
+          videoplayer.pause()
+        }
+      }
+      const params = new URLSearchParams(window.location.search);
+      var videoplayer = document.getElementById('vp')
+      videoplayer.src = params.get('videourl')
+    </script>
   </body>
 
 </html>
