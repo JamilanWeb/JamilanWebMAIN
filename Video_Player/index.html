@@ -11,6 +11,9 @@
     </div>
     <script>
       var pause_play = document.getElementById('play_pauser')
+      const params = new URLSearchParams(window.location.search);
+      var videoplayer = document.getElementById('vp')
+      videoplayer.src = params.get('videourl')
       function videoaction(e) {
         if (e=="play") {
           pause_play.onclick={
@@ -27,9 +30,6 @@
           videoplayer.pause()
         }
       }
-      const params = new URLSearchParams(window.location.search);
-      var videoplayer = document.getElementById('vp')
-      videoplayer.src = params.get('videourl')
     </script>
   </body>
 
