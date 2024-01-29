@@ -15,6 +15,7 @@
       const params = new URLSearchParams(window.location.search);
       var videoplayer = document.getElementById('vp')
       videoplayer.src = params.get('video')
+      videoplayer.removeAttribute("controls");
     </script>
   </body>
 
