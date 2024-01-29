@@ -6,23 +6,23 @@
   </head>
   <body>
     <div id="videopplayer">
-      <video id="vp"></video>
+      <video id="vp" width=1000 height=600></video>
       <button id="play_pauser" style="background: none;" onclick="videoaction('play')">play</button>
     </div>
     <script>
       var pause_play = document.getElementById('play_pauser')
       const params = new URLSearchParams(window.location.search);
       var videoplayer = document.getElementById('vp')
-      videoplayer.src = params.get('videourl')
-      function videoaction(e) {
-        if (e=="play") {
+      videoplayer.src = params.get('video')
+      function videoaction(er) {
+        if (er=="play") {
           pause_play.onclick={
             videoaction("pause")
           }
           pause_play.textContent = "pause"
           videoplayer.play()
         }
-        if (e=="pause") {
+        if (er=="pause") {
           pause_play.onclick={
             videoaction("play")
           }
