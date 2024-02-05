@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>APP_SCRIPT-PLAYER</title>
+  </head>
+  <body>
+    <div id="videopplayer" oncontextmenu="return false;">
+      <video id="vp" width=1000 height=600 src="update.mp4"></video>
+      <button style="background: none;" onclick="videoplayer.play()">play</button>
+      <button style="background: none;" onclick="videoplayer.pause()">pause</button>
+    </div>
+    <script>
+      var pause_play = document.getElementById('play_pauser')
+      var videoplayer = document.getElementById('vp')
+      videoplayer.removeAttribute("controls");
+    </script>
+  </body>
+
+</html>
