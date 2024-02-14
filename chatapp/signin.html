@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Sign In</h1>
-<form id="signin-form">
+<form id="signin-form" method="POST">
 <label for="username">Username:</label>
 <input type="text" id="username" name="username" required>
 <br>
@@ -27,23 +27,22 @@ form.addEventListener('submit', handleSubmit);
           const username = document.getElementById('username').value;
           const password = document.getElementById('password').value;
 
-          const url = 'https://script.google.com/macros/s/AKfycbxYq_cuaRdLJ3tsRaYqJD465loYC2xeydgqltRQcZFSMHF0eMlKleECI-WGx1N5T7jr/exec'; // Replace with your actual script URL
+          const url = 'https://script.google.com/macros/s/AKfycbzPxaqxqi8H40fp7pNG7EwTP92wewlc6D5KDReuUsGDGhQOOOL17ykqOn3m8bl-D-mT/exec'; // Replace with your actual script URL
 
           const params = {
-              action: 'signin',
               username,
               password
           };
 
           const options = {
-              method: 'GET',
-              mode: 'cors',
-              cache: 'no-cache',
-              headers: {
-                  'Content-Type': 'application/x-www-form-urlencoded' // Ensure correct content type
-              },
-              body: new URLSearchParams(params) // Send parameters as URL-encoded data
-          };
+            method: 'POST', // Change to POST
+            mode: 'cors',
+            cache: 'no-cache',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded' // Ensure correct content type
+            },
+                body: new URLSearchParams(params) // Send parameters as URL-encoded data
+            };
 
           fetch(url, options)
               .then(response => response.json())
