@@ -45,8 +45,7 @@ form.addEventListener('submit', handleSubmit);
             };
 
           fetch(url, options)
-              .then(response => response.json())
-              .then(data => {
+              .then(response => response.json()).then(data => {
                   messageElement.textContent = '';
 
                   if (data.Auth) {
