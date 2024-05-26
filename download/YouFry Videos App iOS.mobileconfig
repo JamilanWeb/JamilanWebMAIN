@@ -5,7 +5,7 @@
 	<key>ConsentText</key>
 	<dict>
 		<key>default</key>
-		<string>This is a safe profile and for iPad not iOS users!</string>
+		<string>This is a safe profile and for iOS not iPad users!</string>
 	</dict>
 	<key>PayloadContent</key>
 	<array>
@@ -27974,31 +27974,31 @@
 			<key>PayloadDisplayName</key>
 			<string>Web Clip</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.webClip.managed.E6467E4B-3237-4589-ADF9-345BE206FA25</string>
+			<string>com.apple.webClip.managed.D42214EE-3220-4748-80BE-CA832C29D187</string>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>E6467E4B-3237-4589-ADF9-345BE206FA25</string>
+			<string>D42214EE-3220-4748-80BE-CA832C29D187</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>Precomposed</key>
 			<false/>
 			<key>URL</key>
-			<string>https://sites.google.com/view/ufry</string>
+			<string>https://sites.google.com/view/youfry-mobile-whoopsy/</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
 	<string>This will put an app on your home screen named "YouFry Videos"</string>
 	<key>PayloadDisplayName</key>
-	<string>YouFry Videos iPad App</string>
+	<string>YouFry Videos iOS</string>
 	<key>PayloadIdentifier</key>
-	<string>Jamisons-Mac-mini.E2F84512-3267-4F56-A380-866E665DCEB0</string>
+	<string>Jamisons-Mac-mini.10CDB3CA-52EA-4DC5-9BA4-F5C41E8E5C12</string>
 	<key>PayloadRemovalDisallowed</key>
 	<false/>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>1414E45C-4244-45A7-AE9C-F7E70C549EA7</string>
+	<string>FA320989-D416-4999-833B-9E09B97B765B</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
